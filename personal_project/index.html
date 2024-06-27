@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="input-field">
+      <input type="text" id="display" disabled>
+    </div>
+
+    <div class="row-containerr">
+      <div class="row">
+        <button class="btn waves-effect waves-light primary" onclick="clearDisplay()">C</button>
+        <button class="btn waves-effect waves-light primary" onclick="deleteNumber()">←</button>
+        <button class="btn waves-effect waves-light secondary" onclick="appendNumber('/')">÷</button>
+        <button class="btn waves-effect waves-light secondary" onclick="appendNumber('*')">×</button>
+      </div>
+
+      <div class="row">
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('7')">7</button>
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('8')">8</button>
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('9')">9</button>
+        <button class="btn waves-effect waves-light secondary" onclick="appendNumber('-')">-</button>
+      </div>
+
+      <div class="row">
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('4')">4</button>
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('5')">5</button>
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('6')">6</button>
+        <button class="btn waves-effect waves-light secondary" onclick="appendNumber('+')">+</button>
+      </div>
+
+      <div class="row">
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('1')">1</button>
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('2')">2</button>
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('3')">3</button>
+        <button class="btn waves-effect waves-light primary" onclick="calculate()">=</button>
+      </div>
+
+      <div class="row">
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('0')">0</button>
+        <button class="btn waves-effect waves-light tertiary" onclick="appendNumber('.')">.</button>
+      </div>
+    </div>
+    <div>Project-Md. Jubaer Mahmud Sarker</div>
+    <div>Linkedin:-jmsman3 || Github:-jmsman3</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
